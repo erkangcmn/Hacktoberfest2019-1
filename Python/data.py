@@ -8,4 +8,6 @@ html=veri.content
 parcala=BeautifulSoup(html,"html.parser")
 for i in parcala.find_all("span",{"class":"content-timeline--underline"}):
     liste.append(i.text)
-print(liste)
+for x in liste:
+    print(x)
+
